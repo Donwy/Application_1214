@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_profile"
+        android:alphabeticShortcut="\n"
+        android:icon="@drawable/exit"
+        android:title="个人资料" />
+
+    <item
+        android:id="@+id/menu_topic"
+        android:alphabeticShortcut="q"
+        android:icon="@drawable/exit"
+        android:title="我的话题" />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/exit"
+        android:title="注销" />
+    <item
+        android:id="@+id/menu_exit"
+        android:icon="@drawable/exit"
+        android:title="退出" />
+
+</menu>

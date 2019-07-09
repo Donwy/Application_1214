@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.application_1214" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".loginSignin.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".loginSignin.SigninActivity"></activity>
+        <activity android:name=".broadcast.BroadcastActivity"></activity>
+        <activity android:name=".friend.FriendActivity"></activity>
+        <activity android:name=".friend.FindFriendActivity"></activity>
+        <activity android:name=".friend.AddFriendActivity"></activity>
+        <activity android:name=".friend.FriendOperateActivity"></activity>
+        <activity android:name=".broadcast.AddBroadcastActivity"></activity>
+        <activity android:name=".broadcast.TopicActivity"></activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".broadcast.MyTopicActivity"></activity>
+        <activity android:name=".broadcast.TopicOperateActivity"></activity>
+        <activity android:name=".broadcast.DiscussActivity"></activity>
+        <activity android:name=".broadcast.AddDiscussActivity"></activity>
+        <activity android:name=".loginSignin.RevisePasswordActivity"></activity>
+        <activity android:name=".message.AddLetterActivity"></activity>
+        <activity android:name=".message.LetterActivity"></activity>
+
+    </application>
+
+</manifest>

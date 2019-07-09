@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parent"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="0.11">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="请输入评论内容："
+            android:textColor="#000"
+            android:textSize="20dip"
+            android:paddingTop="10dip"
+            android:paddingLeft="10dip"
+            android:gravity="top"
+            android:id="@+id/textView"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="top"
+            android:id="@+id/edit_adddiscuss"
+            android:paddingTop="10dip"
+            android:paddingLeft="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:lines="4"
+            android:textColor="#000"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_below="@+id/edit_findfriend"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.11">
+        <Button
+            android:layout_width="100dip"
+            android:layout_height="45dip"
+            android:textColor="#000"
+            android:text="取消"
+            android:textSize="18sp"
+            android:id="@+id/button_adddiscuss_close"
+            android:layout_marginRight="0dip"
+            android:onClick="onSendClick"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="100dip"
+            android:layout_height="45dip"
+            android:textColor="#000"
+            android:text="发表"
+            android:textSize="18sp"
+            android:onClick="onCancelClick"
+            android:id="@+id/button_adddiscuss_add"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginRight="0dip"
+            android:layout_marginBottom="0dip"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

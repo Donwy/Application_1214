@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="0.0px"
+    android:background="@drawable/bg1">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:weightSum="19">
+
+            <TextView
+                android:id="@+id/all_broadcast"
+                style="@style/TitleTextView"
+                android:layout_height="match_parent"
+                android:layout_weight="18"
+                android:text="@string/broadcast_activity"
+                android:textColor="#000"/>
+
+            <ImageView
+                android:id="@+id/broadcast_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/broadcast_add"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onRefrehClick"
+                android:scaleType="center"
+                android:src="@drawable/_refresh" />
+
+            <ImageView
+                android:id="@+id/broadcast_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0"
+                android:clickable="true"
+                android:onClick="onAddClick"
+                android:scaleType="center"
+                android:src="@drawable/_add" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:layout_marginTop="1dip"
+                android:background="#fff"
+                android:gravity="top"
+                android:paddingLeft="0dip"
+                android:paddingTop="2dip"
+                android:textSize="3dip" />
+
+            <ListView
+                android:id="@+id/broadcast_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.04"
+                android:textColor="#000"></ListView>
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup_broadcast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/radio_button_broadcast_broadcast"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@android:drawable/ic_dialog_dialer"
+                android:text="话题"
+                android:textColor="#000"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_broadcast_friend"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@android:drawable/ic_menu_sort_by_size"
+                android:text="好友"
+                android:textColor="#000"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_broadcast_letter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/drawable_person1"
+                android:text="个人信息"
+                android:textColor="#000"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

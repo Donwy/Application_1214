@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="0.0px"
+    android:background="@drawable/bg1">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:weightSum="19">
+
+            <TextView
+                android:id="@+id/all_discuss"
+                style="@style/TitleTextView"
+                android:layout_height="match_parent"
+                android:layout_weight="18"
+                android:text="评论"
+                android:textColor="#000"/>
+
+            <ImageView
+                android:id="@+id/discuss_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/broadcast_add"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onRefrehClick"
+                android:scaleType="center"
+                android:src="@drawable/_refresh" />
+
+            <ImageView
+                android:id="@+id/discuss_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0"
+                android:clickable="true"
+                android:onClick="onAddClick"
+                android:scaleType="center"
+                android:src="@drawable/_add" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:layout_marginTop="1dip"
+                android:background="#a52f"
+                android:gravity="top"
+                android:paddingLeft="0dip"
+                android:paddingTop="2dip"
+                android:textSize="3dip" />
+
+            <ListView
+                android:id="@+id/discuss_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></ListView>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_discuss_close"
+            android:layout_width="100dip"
+            android:layout_height="45dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="0dip"
+            android:onClick="onSendClick"
+            android:text="返回"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal|bottom" />
+    </LinearLayout>
+</LinearLayout>
